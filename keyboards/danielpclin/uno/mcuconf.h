@@ -65,7 +65,7 @@
 #define STM32_SW                            STM32_SW_PLL
 #define STM32_PLLSRC                        STM32_PLLSRC_HSE
 #define STM32_PREDIV_VALUE                  1
-#define STM32_PLLMUL_VALUE                  3
+#define STM32_PLLMUL_VALUE                  6
 #define STM32_HPRE                          STM32_HPRE_DIV1
 #define STM32_PPRE                          STM32_PPRE_DIV1
 #define STM32_ADCSW                         STM32_ADCSW_HSI14
@@ -198,5 +198,10 @@
 #undef STM32_I2C_USE_I2C1
 #define STM32_I2C_USE_I2C1 TRUE
 #endif /* RGB_MATRIX_ENABLE */
+
+#if STM32_HSECLK == 16000000U
+#undef STM32_PLLMUL_VALUE
+#define STM32_PLLMUL_VALUE 3
+#endif
 
 #endif /* _MCUCONF_H_ */

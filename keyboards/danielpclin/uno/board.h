@@ -19,6 +19,10 @@
 #include_next <board.h>
 
 #undef STM32_HSECLK
-#define STM32_HSECLK 16000000U
+// using 8Mhz xtal
+#define STM32_HSECLK 8000000U
+// using 16Mhz xtal
+// #define STM32_HSECLK 16000000U
+
 
 #undef STM32_HSE_BYPASS
