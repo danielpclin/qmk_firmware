@@ -16,6 +16,12 @@
 
 #pragma once
 
+/* Enable caps-lock LED */
+#define CAPS_LOCK_LED_INDEX 36
+
+/* Enable scroll-lock LED */
+#define SCROLL_LOCK_LED_INDEX 85
+
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
