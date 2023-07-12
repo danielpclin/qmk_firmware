@@ -22,6 +22,12 @@
 /* Enable scroll-lock LED */
 #define SCROLL_LOCK_LED_INDEX 85
 
+#undef FORCE_NKRO
+#define FORCE_NKRO
+
+#undef USB_POLLING_INTERVAL_MS
+#define USB_POLLING_INTERVAL_MS 1
+
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
